@@ -79,7 +79,7 @@ if page == "🏠 Homepage":
         st.write("A supervised algorithm used for predicting continuous output using a best-fit line (y = mx + c).")
         st.markdown("---")
         st.subheader("◽**Graph** :- ")
-        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\1.webp")  
+        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\Graphs\1.webp")  
         st.markdown("---")
         st.subheader("◽**Python Code** :- ")
         st.code('''
@@ -99,7 +99,7 @@ if page == "🏠 Homepage":
         st.write("Used for classification problems where output is binary (0 or 1). It uses a sigmoid function to predict probabilities between 0 and 1.")
         st.markdown("---")
         st.subheader("🔸**Graph** :- ")
-        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\2.png") 
+        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\Graphs\2.png") 
         st.markdown("---")
         st.subheader("🔸**Python Code** :- ")
         st.code('''
@@ -119,7 +119,7 @@ if page == "🏠 Homepage":
         st.write("A tree-based supervised learning algorithm used for both classification and regression. It splits the dataset based on feature values to make predictions")
         st.markdown("---")
         st.subheader("🔰**Graph** :- ")
-        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\3.webp") 
+        st.image(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\Graphs\3.webp") 
         st.markdown("---")
         st.subheader("🔰**Python Code** :- ")
         st.code("""from sklearn.tree import DecisionTreeClassifier
@@ -201,7 +201,7 @@ elif page == "📚 Supervised":
     st.subheader("Example Dataset (Salary_Dataset.csv)")
     
     try:
-        df = pd.read_csv(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\Salary_dataset.csv")
+        df = pd.read_csv(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\CSV FIles\Salary_dataset.csv")
         for col in df.columns:
             if col.startswith('Unnamed'):
                 df = df.rename(columns={col: 'Id_No'})
@@ -292,7 +292,7 @@ elif page == "🧩 Unsupervised":
     st.subheader("Example Dataset (Mall_Customers.csv)")
     
     try:
-        df_unsup = pd.read_csv(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\Mall_Customers.csv")
+        df_unsup = pd.read_csv(r"C:\Users\Chinmay\OneDrive\Desktop\Internship\Python\Projects\StreamML-Studio\CSV FIles\Mall_Customers.csv")
         st.write(df_unsup.head(10))
     except FileNotFoundError:
         st.error("Dataset file not found. Please update the file path or upload a dataset.")
